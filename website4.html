@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" a href="website.css">
+    <link rel="stylesheet" a href="bootstrap copy.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stades</title>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fafafa;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #176d1e; 
+  padding: 80px 0;
+  color: white;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+header p {
+  font-size: 18px;
+  opacity: 0.8;
+}
+
+
+.stadium-cards {
+  display: grid;
+  
+  gap: 20px;
+  padding: 40px;
+}
+
+.stadium-card {
+  position: relative;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stadium-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.stadium-img {
+  height: 200px;
+  background-size: cover;
+  background-position:center;
+}
+
+.stadium-info {
+  padding: 20px;
+}
+
+.stadium-info h2 {
+  font-size: 22px;
+  color: #c8102e;
+  margin-bottom: 15px;
+}
+
+.stadium-info p {
+  font-size: 14px;
+  color: #555;
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  font-size: 14px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  opacity: 0.7;
+}
+
+
+@media (max-width: 768px) {
+  header {
+    padding: 60px 20px;
+  }
+
+  .stadium-cards {
+    padding: 20px;
+
+  }
+  .stadium-info h2 {color: #176d1e;}
+}
+          
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+          <h1>Stades Marocains pour la Coupe du Monde 2030</h1>
+          <p>Découvrez les stades emblématiques qui accueilleront la Coupe du Monde 2030 au Maroc !</p>
+        </div>
+      </header>
+    
+      <section class="stadium-cards">
+       
+        <div class="stadium-card">
+          <div class="stadium-img" style="background-image: url(moh\ 6.jpg);"></div>
+          <div class="stadium-info">
+            <h2>Stade Mohammed V</h2>
+            <p>Un stade colossal à Casablanca, avec une capacité de 67 000 spectateurs. Ce sera l'un des plus grands stades de la Coupe du Monde.</p>
+          </div>
+        </div>
+    
+     
+        <div class="stadium-card">
+          <div class="stadium-img" style="background-image: url(STADE-abd.jpg);"></div>
+          <div class="stadium-info">
+            <h2>Stade Prince Moulay Abdellah</h2>
+            <p>Situé à Rabat, ce stade a une capacité de 53 000 places et possède certaines des meilleures infrastructures d'Afrique.</p>
+          </div>
+        </div>
+    
+        
+        <div class="stadium-card">
+          <div class="stadium-img" style="background-image: url(agadir.webp);"></div>
+          <div class="stadium-info">
+            <h2>Stade Adrar</h2>
+            <p>Ce magnifique stade à Agadir, avec une capacité de 45 000 places, offre une vue imprenable sur la mer Méditerranée.</p>
+          </div>
+        </div>
+    
+        
+        <div class="stadium-card">
+          <div class="stadium-img" style="background-image: url(ibn\ batouta.jpeg);"></div>
+          <div class="stadium-info">
+            <h2>Stade Ibn Battuta</h2>
+            <p>Un stade moderne avec une touche culturelle, situé à Tétouan, il peut accueillir 45 000 spectateurs et offre des installations de haut niveau.</p>
+          </div>
+        </div>
+      </section>
+    
+      <section class="stadium-cards">
+       
+        <div class="stadium-card">
+          <div class="stadium-img" style="background-image: url(marra.jpg);"></div>
+          <div class="stadium-info">
+            <h2>Stade de Marrakech</h2>
+            <p>Le Stade de Marrakech, situé au cœur de la ville ocre, est un lieu emblématique qui peut accueillir jusqu'à 45 000 spectateurs</p>
+          </div>
+        </div>
+    
+     
+        <div class="stadium-card">
+          <div class="stadium-img" style="background-image: url(fes.jpeg.avif);"></div>
+          <div class="stadium-info">
+            <h2>Stade de Fes</h2>
+            <p>Le Stade de Fès, d'une capacité de 45 000 places, est un véritable joyau architectural qui allie modernité et influences culturelles marocaines.</p>
+          </div>
+        </div>
+    
+        
+        
+      </section>
+      <footer>
+        <p>&copy; 2025 Stades Marocains - Coupe du Monde 2030</p>
+      </footer>
+      
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" a href="website.css">
+    <link rel="stylesheet" a href="bootstrap copy.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acheter des Billets</title>
+    <style>
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {font-family: 'Arial', sans-serif;
+  background-color:#e7f0f7; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  width: 100vw;
+}
+
+
+.form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  max-width: 500px;
+  text-align: center;
+  float: left;
+  margin-left: 4vw;
+}
+
+h2 {
+  font-size: 26px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+ input{
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+ 
+  transition: border-color 0.3s ;
+}
+ select {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  
+  transition: border-color 0.3s ;
+}
+
+
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #e83232;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+.image {
+    width: 60vw;
+    margin-left: 5vw;
+        }
+        
+ img {height: 100vh;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    float: right;
+           
+        }
+
+button:hover {
+  background-color: #db5555; 
+}
+    </style>
+</head>
+<body>
+    <form>
+
+ <div class="input-group">
+    <label for="name">Nom Complet</label>
+    <input type="text"  name="name" placeholder="Votre Nom Complet" required>
+        </div>
+        
+ <div class="input-group">
+    <label for="email">Adresse Email</label>
+    <input type="email"  name="email" placeholder="Votre Email" required>
+</div>
+      
+<div class="input-group">
+<label for="team">Choisir Votre Équipe</label>
+<select id="team" name="team" required>
+        <option value="">Sélectionnez Votre Équipe</option>
+        <option value="team_a">Équipe A</option>
+        <option value="team_b">Équipe B</option>
+        <option value="team_c">Équipe C</option>
+        <option value="team_d">Équipe D</option>
+          </select>
+ </div>
+      
+        
+<div class="input-group">
+     <label for="stade">Choisir un Stade</label>
+          <select  name="stade" required>
+            <option value="casablanca">Stade Mohammed V (Casablanca)</option>
+            <option value="rabat">Stade Prince Moulay Abdellah (Rabat)</option>
+            <option value="tanger">Stade de Tanger</option>
+            <option value="marrakech">Stade de Marrakech</option>
+            <option value="fes">Stade de Fès</option>
+          </select>
+</div>
+      
+<div class="input-group">
+    <label for="tickets">Nombre de Billets</label>
+    <input type="number"  name="tickets" placeholder="Combien de billets ?"  required>
+    </div>
+      
+<div class="input-group">
+    <label for="date">Date de l'Événement</label>
+    <input type="date"   required>
+</div>
+      
+<div class="input-group">
+    <label for="payment">Méthode de Paiement</label>
+    <select id="payment" name="payment" required>
+        <option value="">Sélectionnez la Méthode de Paiement</option>
+        <option value="Carte de Crédit">Carte de Crédit</option>
+        <option value="paypal">PayPal</option>
+        <option value="bVirement Bancaire">Virement Bancaire</option>
+          </select>
+</div>
+      
+<button type="submit">Acheter des Billets</button>
+</form>
+      
+<div class="image">
+<img src="ticket.jpeg" alt="Image de Billet">
+    </div>
+
+</body>
+</html>
